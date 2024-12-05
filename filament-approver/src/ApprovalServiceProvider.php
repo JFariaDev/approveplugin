@@ -36,7 +36,7 @@ class ApprovalServiceProvider extends PackageServiceProvider
                     ->publishConfigFile()
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('eightynine/filament-approvals');
+                    ->askToStarRepoOnGitHub('eightynine/filament-approver');
             })
             ->hasViews(static::$viewNamespace);
 

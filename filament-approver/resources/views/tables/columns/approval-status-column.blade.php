@@ -2,7 +2,7 @@
     @if($getRecord()->approvalStatus)
         <p class="px-3">
             <small>
-                {{ $getRecord()->approvalStatus->status }} {{ __('filament-approvals::approvals.status_column.approval_by_prefix') }}
+                {{ $getRecord()->approvalStatus->status }} {{ __('filament-approver::approvals.status_column.approval_by_prefix') }}
                 @if ($getRecord()->lastApproval)
                     {{ $getRecord()->lastApproval->approver_name }}
                 @else

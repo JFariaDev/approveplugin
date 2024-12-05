@@ -1,21 +1,22 @@
 {
-    "name": "eightynine/filament-approvals",
+    "name": "approveplugin/filament-approver",
     "description": "Manage approval processes in your filament application",
     "keywords": [
-        "eightynine",
+        "approveplugin",
         "laravel",
-        "filament-approvals"
+        "filament-approver"
     ],
-    "homepage": "https://github.com/eightynine/filament-approvals",
+    "version": "1.0.0",
+    "homepage": "https://github.com/JFariaDev/approveplugin/filament-approver",
     "support": {
-        "issues": "https://github.com/eightynine/filament-approvals/issues",
-        "source": "https://github.com/eightynine/filament-approvals"
+        "issues": "https://github.com/JFariaDev/approveplugin/filament-approver/issues",
+        "source": "https://github.com/JFariaDev/approveplugin/filament-approver"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Eighty Nine",
-            "email": "eighty9nine@gmail.com",
+            "name": "Jose Faria",
+            "email": "josefaira.webdev@gmail.com",
             "role": "Developer"
         }
     ],
@@ -36,13 +37,13 @@
     },
     "autoload": {
         "psr-4": {
-            "EightyNine\\Approvals\\": "src/",
-            "EightyNine\\Approvals\\Database\\Factories\\": "database/factories/"
+            "ApprovePlugin\\FilamentApprover\\": "src/",
+            "ApprovePlugin\\FilamentApprover\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "EightyNine\\Approvals\\Tests\\": "tests/"
+            "ApprovePlugin\\FilamentApprover\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -60,13 +61,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EightyNine\\Approvals\\ApprovalServiceProvider"
+                "ApprovePlugin\\FilamentApprover\\ApprovalServiceProvider"
             ],
             "aliases": {
-                "Approval": "EightyNine\\Approvals\\Facades\\Approval"
+                "Approval": "ApprovePlugin\\FilamentApprover\\Facades\\Approval"
             }
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
