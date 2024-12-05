@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Traits;
+namespace ApprovePlugin\FilamentApprover\Traits;
 
 trait HasApprovalWidget
 {

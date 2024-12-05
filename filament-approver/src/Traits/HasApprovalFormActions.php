@@ -1,11 +1,11 @@
 <?php
 
-namespace EightyNine\Approvals\Traits;
+namespace ApprovePlugin\FilamentApprover\Traits;
 
-use EightyNine\Approvals\Forms\Actions\ApproveAction;
-use EightyNine\Approvals\Forms\Actions\DiscardAction;
-use EightyNine\Approvals\Forms\Actions\RejectAction;
-use EightyNine\Approvals\Forms\Actions\SubmitAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\ApproveAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\DiscardAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\RejectAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\SubmitAction;
 use Filament\Actions\Action;
 
 trait HasApprovalFormActions

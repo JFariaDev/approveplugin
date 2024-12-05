@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Tables\Actions;
+namespace ApprovePlugin\FilamentApprover\Tables\Actions;
 
 use Filament\Support\Enums\ActionSize;
 use Filament\Tables\Actions\Action;
@@ -11,7 +11,7 @@ class ApprovalActions
 {
     public static function make(Action|array $action, $alwaysVisibleActions = []): array
     {
-        
+
         $actions = [
             ActionGroup::make([
                 SubmitAction::make(),
@@ -25,7 +25,7 @@ class ApprovalActions
                 ->color('primary')
                 ->button(),
         ];
-        
+
         if(is_array($action)) {
             foreach($action as $a) {
                 $actions[] = $a->visible(fn (Model $record) => $record->isApprovalCompleted());
@@ -33,7 +33,7 @@ class ApprovalActions
         } else {
             $actions[] = $action->visible(fn (Model $record) => $record->isApprovalCompleted());
         }
-        
+
         return array_merge($actions, $alwaysVisibleActions);
     }
 }

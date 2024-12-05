@@ -1,8 +1,8 @@
 <?php
 
-namespace EightyNine\Approvals\Filament\Resources\ApprovalFlowResource\Pages;
+namespace ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource\Pages;
 
-use EightyNine\Approvals\Filament\Resources\ApprovalFlowResource;
+use ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 

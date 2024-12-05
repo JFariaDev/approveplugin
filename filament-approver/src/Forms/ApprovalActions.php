@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Forms;
+namespace ApprovePlugin\FilamentApprover\Forms;
 
 class ApprovalActions
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Tables\Columns;
+namespace ApprovePlugin\FilamentApprover\Tables\Columns;
 
 use Closure;
 use Filament\Forms\Components\Placeholder;
@@ -11,12 +11,12 @@ use Filament\Tables\Columns\Column;
 class ApprovalStatusColumn extends Column
 {
     protected string $view = 'filament-approvals::tables.columns.approval-status-column';
-    
+
     protected function setUp(): void
     {
         parent::setUp();
-        
-        
+
+
         $this->action(
             ViewAction::make('Approval History')
                 ->modalHeading(__('filament-approvals::approvals.actions.approval_history'))

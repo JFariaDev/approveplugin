@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Filament\Resources\ApprovalFlowResource\RelationManagers;
+namespace ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource\RelationManagers;
 
 use Filament\Forms;
 use Filament\Forms\Components\Select;

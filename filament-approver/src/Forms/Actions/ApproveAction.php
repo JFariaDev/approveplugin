@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Forms\Actions;
+namespace ApprovePlugin\FilamentApprover\Forms\Actions;
 
 use Closure;
 use Filament\Actions\Action;

@@ -13,13 +13,13 @@
         <p class="px-3 text-xs">
             <small>
                 {{ $getRecord()->isApprovalCompleted() ?
-                    __('filament-approvals::approvals.status_column.approval_complete') :
-                    __('filament-approvals::approvals.status_column.approval_in_process') }}
+                    __('filament-approver::approver.status_column.approval_complete') :
+                    __('filament-approver::approver.status_column.approval_in_process') }}
             </small>
         </p>
     @else
-        <span class="px-3 py-1 bg-gray-200 text-gray-800 rounded-full text-xs">
-            {{ __('filament-approvals::approvals.status_column.approval_status_does_not_exist') }}
+        <span class="px-3 py-1 text-xs text-gray-800 bg-gray-200 rounded-full">
+            {{ __('filament-approver::approver.status_column.approval_status_does_not_exist') }}
         </span>
     @endif
 </div>

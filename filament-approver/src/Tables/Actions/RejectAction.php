@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Tables\Actions;
+namespace ApprovePlugin\FilamentApprover\Tables\Actions;
 
 use Closure;
 use Filament\Forms\Components\Textarea;
@@ -61,9 +61,9 @@ class RejectAction extends Action
     private function rejectModel(): Closure
     {
         return function (array $data, Model $record): bool {
-            
+
             $record->reject(Arr::get($data, 'comment', ''), Auth::user());
-            
+
             Notification::make()
                 ->title('Rejected successfully')
                 ->success()

@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals;
+namespace ApprovePlugin\FilamentApprover;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -13,14 +13,14 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use EightyNine\Approvals\Commands\ApprovalCommand;
-use EightyNine\Approvals\Testing\TestsApproval;
+use ApprovePlugin\FilamentApprover\Commands\ApprovalCommand;
+use ApprovePlugin\FilamentApprover\Testing\TestsApproval;
 
 class ApprovalServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'filament-approvals';
+    public static string $name = 'filament-approver';
 
-    public static string $viewNamespace = 'filament-approvals';
+    public static string $viewNamespace = 'filament-approver';
 
     public function configurePackage(Package $package): void
     {

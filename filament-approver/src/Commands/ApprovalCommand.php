@@ -1,12 +1,12 @@
 <?php
 
-namespace EightyNine\Approvals\Commands;
+namespace ApprovePlugin\FilamentApprover\Commands;
 
 use Illuminate\Console\Command;
 
 class ApprovalCommand extends Command
 {
-    public $signature = 'filament-approvals';
+    public $signature = 'filament-approer';
 
     public $description = 'My command';
 

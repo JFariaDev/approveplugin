@@ -1,8 +1,8 @@
 <?php
 
-namespace EightyNine\Approvals;
+namespace ApprovePlugin\FilamentApprover;
 
-use EightyNine\Approvals\Filament\Resources\ApprovalFlowResource;
+use ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
@@ -25,7 +25,7 @@ class ApprovalPlugin implements Plugin
 
     public function getId(): string
     {
-        return 'filament-approvals';
+        return 'filament-approver';
     }
 
     public function register(Panel $panel): void

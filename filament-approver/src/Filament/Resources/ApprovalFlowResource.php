@@ -1,13 +1,13 @@
 <?php
 
-namespace EightyNine\Approvals\Filament\Resources;
+namespace ApprovePlugin\FilamentApprover\Filament\Resources;
 
-use EightyNine\Approvals\Filament\Resources\ApprovalFlowResource\Pages;
-use EightyNine\Approvals\Filament\Resources\ApprovalFlowResource\RelationManagers;
+use ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource\Pages;
+use ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource\RelationManagers;
 use App\Models\ApprovalFlow;
-use EightyNine\Approvals\Filament\Resources\ApprovalFlowResource\RelationManagers\StepsRelationManager;
-use EightyNine\Approvals\Models\ApprovableModel;
-use EightyNine\Approvals\Services\ModelScannerService;
+use ApprovePlugin\FilamentApprover\Filament\Resources\ApprovalFlowResource\RelationManagers\StepsRelationManager;
+use ApprovePlugin\FilamentApprover\Models\ApprovableModel;
+use ApprovePlugin\FilamentApprover\Services\ModelScannerService;
 use Filament\Forms;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;

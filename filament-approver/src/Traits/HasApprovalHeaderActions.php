@@ -1,13 +1,13 @@
 <?php
 
-namespace EightyNine\Approvals\Traits;
+namespace ApprovePlugin\FilamentApprover\Traits;
 
 
-use EightyNine\Approvals\Forms\Actions\ApproveAction;
-use EightyNine\Approvals\Forms\Actions\DiscardAction;
-use EightyNine\Approvals\Forms\Actions\RejectAction;
-use EightyNine\Approvals\Forms\Actions\SubmitAction;
-use EightyNine\Approvals\Models\ApprovableModel;
+use ApprovePlugin\FilamentApprover\Forms\Actions\ApproveAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\DiscardAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\RejectAction;
+use ApprovePlugin\FilamentApprover\Forms\Actions\SubmitAction;
+use ApprovePlugin\FilamentApprover\Models\ApprovableModel;
 use Exception;
 use Filament\Actions\Action;
 
@@ -35,9 +35,9 @@ trait HasApprovalHeaderActions
 
     /**
      * Get the completion action
-     * 
+     *
      * @return Filament\Actions\Action
-     * @throws Exception 
+     * @throws Exception
      */
     protected function getOnCompletionAction(): Action
     {

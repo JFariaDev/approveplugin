@@ -1,6 +1,6 @@
 <?php
 
-namespace EightyNine\Approvals\Tables\Actions;
+namespace ApprovePlugin\FilamentApprover\Tables\Actions;
 
 use Closure;
 use Filament\Forms\Components\Textarea;
@@ -39,7 +39,7 @@ class ApproveAction extends Action
             )
             ->requiresConfirmation()
             ->modalDescription(__('filament-approvals::approvals.actions.approve_confirmation_text'));
-        
+
     }
 
 
@@ -70,7 +70,7 @@ class ApproveAction extends Action
             return true;
         };
     }
-    
+
     protected function getDefaultForm(): array
     {
         return [

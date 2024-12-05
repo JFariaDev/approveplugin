@@ -1,8 +1,8 @@
 <?php
 
-namespace EightyNine\Approvals\Models;
+namespace ApprovePlugin\FilamentApprover\Models;
 
-use EightyNine\Approvals\Traits\Approvable;
+use ApprovePlugin\FilamentApprover\Traits\Approvable;
 use Illuminate\Database\Eloquent\Model;
 use RingleSoft\LaravelProcessApproval\Contracts\ApprovableModel as ContractsApprovableModel;
 
